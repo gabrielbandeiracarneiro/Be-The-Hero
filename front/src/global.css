@@ -19,6 +19,7 @@ input, button, textarea{
 
 button{
     cursor: pointer;
+    background: none;
 }
 
 form input{
