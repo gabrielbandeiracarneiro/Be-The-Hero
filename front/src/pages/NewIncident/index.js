@@ -1,16 +1,15 @@
 import React,{useState} from 'react';
 import {Link,useHistory} from 'react-router-dom';
-import './styles.css';
 
 import api from '../../services/api';
-import {FiPower,FiTrash2,FiArrowLeft} from 'react-icons/fi'
 
-import heroesImg from '../../assets/heroes.png'
+import './styles.css';
+
+import {FiArrowLeft} from 'react-icons/fi'
 import logoImg from '../../assets/logo.svg'
 
 export default function NewIncident(){
 
-    const ongName = localStorage.getItem('ongName');
     const ongId = localStorage.getItem('ongId');
     const history = useHistory();
     const [title,setTitle]= useState('');

@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {Link,useHistory} from 'react-router-dom';
 
 import api from '../../services/api';
+
 import './styles.css';
 
 import {FiLogIn} from 'react-icons/fi'
@@ -10,11 +11,14 @@ import heroesImg from '../../assets/heroes.png'
 import logoImg from '../../assets/logo.svg'
 
 export default function Login(){
+
     const [id,setId]= useState('');
     const history = useHistory();
+
     if(localStorage.getItem('ongId')){
         history.push('/profile');
     }
+    
     async function handleLogin(e){
         e.preventDefault();
         try{

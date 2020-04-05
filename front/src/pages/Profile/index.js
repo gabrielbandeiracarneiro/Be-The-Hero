@@ -1,11 +1,11 @@
 import React,{useEffect, useState} from 'react';
 import {Link,useHistory} from 'react-router-dom';
-import './styles.css';
 
 import api from '../../services/api';
-import {FiPower,FiTrash2} from 'react-icons/fi'
 
-import heroesImg from '../../assets/heroes.png'
+import './styles.css';
+
+import {FiPower,FiTrash2} from 'react-icons/fi'
 import logoImg from '../../assets/logo.svg'
 
 export default function Profile(){
